@@ -72,8 +72,10 @@
             padding-bottom: 60px;
         }
         .character-card img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Ensures the image scales horizontally */
+            height: 300px; /* Forces a consistent height for all images */
+            object-fit: cover; /* Ensures images are cropped proportionally without distortion */
+            border-radius: 5px; /* Optional: Add some rounded corners for a consistent look */
         }
         .character-card h3 {
             margin: 10px 0;
@@ -195,17 +197,27 @@
             <p><a href="https://dexscreener.com/solana/3yznduiunshtzf4llywkgoq6atwfwolqm2tlxmzqki67" target="_blank">CA: ABpN1y6ruheXdRAAgn3Lj8YK3vnAEqr2TQNuGUUKpump</a></p>
             <button class="more-info" onclick="openModal('Frontman is the mysterious and enigmatic overseer of the Squid Game. His sharp intellect and calm demeanor make him a formidable presence. Frontman controls the game with precision, always staying one step ahead of the players.')">More Info</button>
         </div>
-		    <div class="character-card">
-        <img src="character4.jpg" alt="Player 333">
-        <p class="name">Myung-gi</p>
-        <h3>Player $333</h3>
-        <p><a href="https://dexscreener.com/solana/4SLrZKaCrJLQEsu42WtTaBzRzAZHmScKj9uYFc1cpump" target="_blank">CA: 4SLrZKaCrJLQEsu42WtTaBzRzAZHmScKj9uYFc1cpump</a></p>
-        <button class="more-info" onclick="openModal('Myung-gi was once a successful YouTuber who went by the name Amazing Myung-gi. He got caught up in a cryptocurrency scam that resulted in substantial monetary losses for him, as well as many of his subscribers. This caused him to become a fugitive from the law and go on the run, and his girlfriend Jun-hee broke up with him.')">More Info</button>
-    </div>	
-		
-		
-		
-		
+        <div class="character-card">
+            <img src="character4.jpg" alt="Player 333">
+            <p class="name">Myung-gi</p>
+            <h3>Player $Myung Gi</h3>
+            <p><a href="https://dexscreener.com/solana/4SLrZKaCrJLQEsu42WtTaBzRzAZHmScKj9uYFc1cpump" target="_blank">CA: 4SLrZKaCrJLQEsu42WtTaBzRzAZHmScKj9uYFc1cpump</a></p>
+            <button class="more-info" onclick="openModal('Myung-gi was once a successful YouTuber who went by the name Amazing Myung-gi. He got caught up in a cryptocurrency scam that resulted in substantial monetary losses for him, as well as many of his subscribers. This caused him to become a fugitive from the law and go on the run, and his girlfriend Jun-hee broke up with him.')">More Info</button>
+        </div>
+        <div class="character-card">
+            <img src="character5.png" alt="Park Yong-sik">
+            <p class="name">Park Yong-sik</p>
+            <h3>Player $007</h3>
+            <p><a href="https://pump.fun/coin/BHcgCCi6zkSZKoFzkhJSkhijB6ftnKWcyWmtYGt7qAwM" target="_blank">CA: BHcgCCi6zkSZKoFzkhJSkhijB6ftnKWcyWmtYGt7qAwM</a></p>
+            <button class="more-info" onclick="openModal('Park Yong-sik is a witty and clever player who uses his intelligence and charm to outmaneuver the competition. Always looking for opportunities, he aims to be the last one standing.')">More Info</button>
+        </div>
+        <div class="character-card">
+            <img src="character6.jfif" alt="Kim Jun-hee">
+            <p class="name">Kim Jun-hee</p>
+            <h3>Player $222</h3>
+            <p><a href="https://pump.fun/coin/Hqsf1kSkFtNDUv4GAMSegYcn4TkZD5PZFEGSaohbpump" target="_blank">CA: Hqsf1kSkFtNDUv4GAMSegYcn4TkZD5PZFEGSaohbpump</a></p>
+            <button class="more-info" onclick="openModal('Jun-hee is a woman looking to rebuild her finances after losing everything in a crypto scam pushed on her by her (now ex) boyfriend Myung-gi.')">More Info</button>
+        </div>
         <div class="character-card">
             <img src="comingsoon.jpg" alt="Coming Soon">
             <h3>COMING SOON</h3>
